@@ -1,0 +1,22 @@
+{
+"name":"Con_app",
+"description":"TBD",
+"version":"1.0.0",
+"manifest_version":3,
+"permissions": ["activeTab", "scripting","tabs"],
+"icons":{
+    "16":"icon/icon16.png",
+    "48":"icon/icon48.png",
+    "128":"icon/icon128.png"
+},
+"action":{
+    "default_icon":"icon/icon16.png",
+    "default_title":"Con_app",
+    "default_popup": "hello.html"
+},
+"content_scripts": [{
+    "matches": [ "http://*/*", "https://*/*"],
+    "js": ["js/content_script.js"]
+}]
+
+}

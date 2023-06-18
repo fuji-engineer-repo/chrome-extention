@@ -1,0 +1,35 @@
+.tab-area {
+    display: flex;/* flexで横並び */
+    border: 2px solid;
+    cursor: pointer;/* カーソルポインターに */
+  }
+.tab {
+    width: calc(100%/3);/* calc関数を使用し、均等に3分割する */
+    padding: 5px;
+    text-align: center;/* 文字を中央に。 */
+  }
+.tab.active {
+    background-color: #000;
+    color: #fff;
+  }
+.tab:nth-child(n+2) {
+    border-left: 2px solid;
+  }
+  .bi{
+    font-size: 20px;
+  }
+ul {
+    list-style: none;
+  }
+.panel {
+    display: none;
+    text-align: center;
+    background-color: #0f0;
+  }
+.panel.active {
+    display: block;
+  }
+  body {
+    max-width: 415px;
+    min-width: 380px;
+  }

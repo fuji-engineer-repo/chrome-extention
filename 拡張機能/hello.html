@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/content_script.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <i class="bi bi-gear-fill"></i>
+    <ul class="tab-area">
+      <li class="tab active">ページ情報</li>
+      <li class="tab">機能</li>
+      <li class="tab">開発中の機能</li>
+    </ul>
+    <div class="panel-area">
+      <div class="panel active">
+        <h2>ページ情報</h2>
+        <ul>
+          <li>URL</li>
+          <input type="button" id="URL" value="URL"/><br />
+          <div id="on_URL"></div>
+
+          <li>タイトル</li>
+          <input type="button" id="title" value="タイトル"/><br />
+          <div id="on_title"></div>
+
+          <li>アイキャッチ</li>
+          <input type="button" id="eye" value="アイキャッチ"/><br />
+          <div id="on_eye"></div>
+
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>機能</h2>
+        <ul>
+          <li>ブラックアウト</li>
+          <input type="button" id="black" value="ブラックアウト"/><br />
+          <div id="on_black"></div>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>開発中の機能</h2>
+
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <input type="button" id="output" value="Exec"/><br />
+        <div id="change"></div>
+
+        <input type="button" id="article" value="記事一覧"/><br />
+        <div id="many_article"></div>
+
+      </div>
+    </div>    
+    
+    <script src="js/jquery-3.7.0.js" ></script>
+    <script src="js/popup.js"></script>      
+  </body>
+</html>
