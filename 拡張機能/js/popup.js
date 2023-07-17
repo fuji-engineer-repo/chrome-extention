@@ -39,6 +39,16 @@ $(function main() {
         })
     })
 
+    //todoリストを作成するスクリプト
+    document.querySelector('#addTask').addEventListener('click',function(){
+        var addTask = document.getElementById('todo');
+        var task_message = addTask.value;
+        var tasks = document.createElement('li');
+        tasks.textContent = task_message;
+        var taskList = document.getElementById('taskList');
+        taskList.appendChild(tasks);
+    })
+
     //開発中の機能
     document.querySelector('#output').addEventListener("click", function(){
         chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, tabs => {
